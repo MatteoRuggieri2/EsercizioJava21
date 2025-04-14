@@ -13,7 +13,6 @@ package esercizi;
 
 public class RicercaDicotomica {
 	
-	private int[] valuesArr;
 	private int searchedValue;
 	private int arrLength;
 	private int startPartition;
@@ -26,13 +25,12 @@ public class RicercaDicotomica {
 	}
 	
 	private void run() {
-		int[] testArray = {2, 5, 7, 8, 21, 30, 44, 60, 72, 98};
+		int[] arr = {2, 5, 7, 8, 21, 30, 44, 60, 72, 98};
 		this.searchedValue = 72;
-		System.out.println(this.dichotomousResearch(this.searchedValue, testArray));
+		System.out.println(this.dichotomousResearch(this.searchedValue, arr));
 	}
 
 	public boolean dichotomousResearch(int valueToFind, int[] array) {
-		this.valuesArr = array;
 		this.arrLength = array.length;
 		this.startPartition = 0; 
 		this.endPartition = this.arrLength - 1;
